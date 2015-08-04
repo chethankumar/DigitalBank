@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-bba63cd80abdf9f7b4023dba9d5b645178c31bbf.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-f0840a708ad8c841feb6115f1154cae8353d5515.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-967446bfa7ded83e7d41ae36681ff641467512dd.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-ab05bd42e12716c828cebfcb8b722f0721c54d9c.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/libs/uicandroid.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2aa44dc79d3bfe398710f10a9fe0a7eb36abbff9">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/uicandroid-1f65e66bf9838ee1d52a21159c871b8802e5997b.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-9ce21b31700cbd283f7b9adc6954c51a7e7c0ce4.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-c903bf03a5e21659604b09d25a7a9eddb50bfdf5.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-982cd15d0f031b72d82b4b9eb6a220cc40036fa3.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-18e1e44c44fd0dc208d77f66c51deaf19004032e.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-fc271181ac2d6f14d8c42a4ecda26e3ffcbcfef9.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-972accbc957ae38f3c3a3288f6471ab281dc1e0a.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-1072275957195ecad6265fba693e9677cb28c38c.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-3dc76e98b849eed44ddbc02a54c728bd7558ba70.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/libs/android-async-http.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f70e680861fdf9449819003e7799a4e9aca047f8">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/android-async-http-785dca209ccb6c8944753c8e9145a163b40f6a06.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-a33dda70efae3b92068e735249867bf0d6af6a51.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-0a780b14362c76373dddf48dfce7188d28fa5e28.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-14d07f2c8c7b17ceb1dda4061a4689abe339459a.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/libs/bcprov.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b6f5d9926b0afbde9f4dbe3db88c5247be7794bb">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/bcprov-1dd358a1dfd21a6892f1ac064fcdec9e4968a00a.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-9115ec8921737cba5cec1417a073ca86e83a6f81.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-37f6fd03f666c81e7e47f2bcd08a9561a66b2cdb.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-975ee39ca38d349d36758360cbd0c02ac70fb2d8.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-a4748be65d7b9b49f709a739cb3111caec27aa04.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/libs/worklight-android.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c3be4ed21df8f4e97f6cca272fd178d76b78d387">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/worklight-android-ba64c976f02ae89e5af0eeefcd22cbb52deb5c49.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-f8e1490870b2ea5e37ad83add68ce7b524c6f2b7.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-9bff72af3a9eb03e1aa9f87b9630f3abcbfa311e.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-69bd49511c5bf2fed37125551903f06062dba331.jar" />
+    </item>
+    <item
+        jar="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/build/intermediates/pre-dexed/debug/classes-dab0b8af301effd2f5db2813843f5339590244e1.jar" />
+    </item>
+
+</items>
