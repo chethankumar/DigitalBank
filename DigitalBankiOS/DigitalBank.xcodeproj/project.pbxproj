@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480100E11B7CB6CA00A8535C /* login icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 480100E01B7CB6CA00A8535C /* login icon.png */; };
+		480100E21B7CB6CA00A8535C /* login icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 480100E01B7CB6CA00A8535C /* login icon.png */; };
+		480100E31B7CB6CA00A8535C /* login icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 480100E01B7CB6CA00A8535C /* login icon.png */; };
+		480100E51B7CBEA400A8535C /* db.png in Resources */ = {isa = PBXBuildFile; fileRef = 480100E41B7CBEA400A8535C /* db.png */; };
+		480100E61B7CBEA400A8535C /* db.png in Resources */ = {isa = PBXBuildFile; fileRef = 480100E41B7CBEA400A8535C /* db.png */; };
+		480100E71B7CBEA400A8535C /* db.png in Resources */ = {isa = PBXBuildFile; fileRef = 480100E41B7CBEA400A8535C /* db.png */; };
+		8230D2A21AC9643A008614F2 /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8230D2A01AC9643A008614F2 /* worklight.plist */; };
+		8230D2A31AC9643A008614F2 /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 8230D2A11AC9643A008614F2 /* WorklightAPI */; };
+		82C44D641AC2EF9900133684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C44D631AC2EF9900133684 /* AppDelegate.swift */; };
+		82C44D661AC2EF9900133684 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C44D651AC2EF9900133684 /* ViewController.swift */; };
+		82C44D691AC2EF9900133684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C44D671AC2EF9900133684 /* Main.storyboard */; };
+		82C44D6B1AC2EF9900133684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C44D6A1AC2EF9900133684 /* Images.xcassets */; };
+		82C44D6E1AC2EF9900133684 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C44D6C1AC2EF9900133684 /* LaunchScreen.xib */; };
+		82C44D881AC2F0E800133684 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D871AC2F0E800133684 /* SystemConfiguration.framework */; };
+		82C44D8B1AC2F0FF00133684 /* sqlcipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D891AC2F0FF00133684 /* sqlcipher.framework */; };
+		82C44D8C1AC2F0FF00133684 /* libWorklightStaticLibProjectNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D8A1AC2F0FF00133684 /* libWorklightStaticLibProjectNative.a */; };
+		82C44D8E1AC2F10800133684 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D8D1AC2F10800133684 /* MobileCoreServices.framework */; };
+		82C44D901AC2F11200133684 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D8F1AC2F11200133684 /* CoreData.framework */; };
+		82C44D921AC2F12F00133684 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D911AC2F12F00133684 /* CoreLocation.framework */; };
+		82C44D941AC2F13700133684 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D931AC2F13700133684 /* Security.framework */; };
+		82C44D961AC2F14200133684 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D951AC2F14200133684 /* libz.dylib */; };
+		82C44D981AC2F14E00133684 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D971AC2F14E00133684 /* libc++.dylib */; };
+		82C44D9A1AC2F15D00133684 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C44D991AC2F15D00133684 /* libstdc++.6.dylib */; };
+		82C44DD51AC4015300133684 /* MyChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C44DD21AC4015300133684 /* MyChallengeHandler.swift */; };
+		82C44DD61AC4015300133684 /* MyConnectListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C44DD31AC4015300133684 /* MyConnectListener.swift */; };
+		82C44DD71AC4015300133684 /* MyLogoutListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C44DD41AC4015300133684 /* MyLogoutListener.swift */; };
+		82C44DD91AC4017800133684 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C44DD81AC4017800133684 /* LoginViewController.swift */; };
+		C764C4E11B68E77600E27AB4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C764C4DF1B68E77600E27AB4 /* Interface.storyboard */; };
+		C764C4E31B68E77600E27AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C764C4E21B68E77600E27AB4 /* Assets.xcassets */; };
+		C764C4EA1B68E77700E27AB4 /* watchapp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C764C4E91B68E77700E27AB4 /* watchapp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C764C4F11B68E77700E27AB4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764C4F01B68E77700E27AB4 /* InterfaceController.swift */; };
+		C764C4F31B68E77700E27AB4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764C4F21B68E77700E27AB4 /* ExtensionDelegate.swift */; };
+		C764C4F51B68E77700E27AB4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764C4F41B68E77700E27AB4 /* NotificationController.swift */; };
+		C764C4F71B68E77700E27AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C764C4F61B68E77700E27AB4 /* Assets.xcassets */; };
+		C764C4FB1B68E77700E27AB4 /* watchapp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C764C4DD1B68E77600E27AB4 /* watchapp.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C764C4EB1B68E77700E27AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C44D561AC2EF9900133684 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C764C4E81B68E77700E27AB4;
+			remoteInfo = "watchapp Extension";
+		};
+		C764C4F91B68E77700E27AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C44D561AC2EF9900133684 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C764C4DC1B68E77600E27AB4;
+			remoteInfo = watchapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C764C4FF1B68E77700E27AB4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C764C4EA1B68E77700E27AB4 /* watchapp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C764C5031B68E77700E27AB4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C764C4FB1B68E77700E27AB4 /* watchapp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		391B07D00FBB5119E2D0FF96 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		480100E01B7CB6CA00A8535C /* login icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login icon.png"; sourceTree = "<group>"; };
+		480100E41B7CBEA400A8535C /* db.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db.png; sourceTree = "<group>"; };
+		4DCAD4F646BA060E11F6380C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8230D2A01AC9643A008614F2 /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
+		8230D2A11AC9643A008614F2 /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
+		82C44D5E1AC2EF9900133684 /* DigitalBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C44D621AC2EF9900133684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C44D631AC2EF9900133684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82C44D651AC2EF9900133684 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82C44D681AC2EF9900133684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82C44D6A1AC2EF9900133684 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82C44D6D1AC2EF9900133684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		82C44D871AC2F0E800133684 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		82C44D891AC2F0FF00133684 /* sqlcipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlcipher.framework; path = WorklightAPI/Frameworks/sqlcipher.framework; sourceTree = "<group>"; };
+		82C44D8A1AC2F0FF00133684 /* libWorklightStaticLibProjectNative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWorklightStaticLibProjectNative.a; path = WorklightAPI/libWorklightStaticLibProjectNative.a; sourceTree = "<group>"; };
+		82C44D8D1AC2F10800133684 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		82C44D8F1AC2F11200133684 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		82C44D911AC2F12F00133684 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		82C44D931AC2F13700133684 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		82C44D951AC2F14200133684 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		82C44D971AC2F14E00133684 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		82C44D991AC2F15D00133684 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		82C44DD21AC4015300133684 /* MyChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyChallengeHandler.swift; sourceTree = "<group>"; };
+		82C44DD31AC4015300133684 /* MyConnectListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConnectListener.swift; sourceTree = "<group>"; };
+		82C44DD41AC4015300133684 /* MyLogoutListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLogoutListener.swift; sourceTree = "<group>"; };
+		82C44DD81AC4017800133684 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		846C4FDE87B7CDB29A2AB7CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C764C4DD1B68E77600E27AB4 /* watchapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C764C4E01B68E77600E27AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C764C4E21B68E77600E27AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C764C4E41B68E77600E27AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C764C4E91B68E77700E27AB4 /* watchapp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchapp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C764C4EF1B68E77700E27AB4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C764C4F01B68E77700E27AB4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C764C4F21B68E77700E27AB4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C764C4F41B68E77700E27AB4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C764C4F61B68E77700E27AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C764C4F81B68E77700E27AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82C44D5B1AC2EF9900133684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C44D8B1AC2F0FF00133684 /* sqlcipher.framework in Frameworks */,
+				82C44D8C1AC2F0FF00133684 /* libWorklightStaticLibProjectNative.a in Frameworks */,
+				82C44D9A1AC2F15D00133684 /* libstdc++.6.dylib in Frameworks */,
+				82C44D981AC2F14E00133684 /* libc++.dylib in Frameworks */,
+				82C44D961AC2F14200133684 /* libz.dylib in Frameworks */,
+				82C44D941AC2F13700133684 /* Security.framework in Frameworks */,
+				82C44D921AC2F12F00133684 /* CoreLocation.framework in Frameworks */,
+				82C44D901AC2F11200133684 /* CoreData.framework in Frameworks */,
+				82C44D8E1AC2F10800133684 /* MobileCoreServices.framework in Frameworks */,
+				82C44D881AC2F0E800133684 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C764C4E61B68E77700E27AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FA27F8A1D34A030EA52CF58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DCAD4F646BA060E11F6380C /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		699ED4FAFA1C12B8351C7530 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				846C4FDE87B7CDB29A2AB7CF /* Pods.debug.xcconfig */,
+				391B07D00FBB5119E2D0FF96 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82C44D551AC2EF9900133684 = {
+			isa = PBXGroup;
+			children = (
+				8230D2A01AC9643A008614F2 /* worklight.plist */,
+				480100E41B7CBEA400A8535C /* db.png */,
+				480100E01B7CB6CA00A8535C /* login icon.png */,
+				8230D2A11AC9643A008614F2 /* WorklightAPI */,
+				82C44D601AC2EF9900133684 /* DigitalBank */,
+				82C44DD11AC2F6D400133684 /* frameworks */,
+				C764C4DE1B68E77600E27AB4 /* watchapp */,
+				C764C4ED1B68E77700E27AB4 /* watchapp Extension */,
+				82C44D5F1AC2EF9900133684 /* Products */,
+				699ED4FAFA1C12B8351C7530 /* Pods */,
+				2FA27F8A1D34A030EA52CF58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82C44D5F1AC2EF9900133684 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82C44D5E1AC2EF9900133684 /* DigitalBank.app */,
+				C764C4DD1B68E77600E27AB4 /* watchapp.app */,
+				C764C4E91B68E77700E27AB4 /* watchapp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82C44D601AC2EF9900133684 /* DigitalBank */ = {
+			isa = PBXGroup;
+			children = (
+				82C44D631AC2EF9900133684 /* AppDelegate.swift */,
+				82C44D651AC2EF9900133684 /* ViewController.swift */,
+				82C44D671AC2EF9900133684 /* Main.storyboard */,
+				82C44D6A1AC2EF9900133684 /* Images.xcassets */,
+				82C44D6C1AC2EF9900133684 /* LaunchScreen.xib */,
+				82C44D611AC2EF9900133684 /* Supporting Files */,
+			);
+			name = DigitalBank;
+			path = SwiftNativeCustomLoginModule;
+			sourceTree = "<group>";
+		};
+		82C44D611AC2EF9900133684 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82C44DD21AC4015300133684 /* MyChallengeHandler.swift */,
+				82C44DD31AC4015300133684 /* MyConnectListener.swift */,
+				82C44DD41AC4015300133684 /* MyLogoutListener.swift */,
+				82C44D621AC2EF9900133684 /* Info.plist */,
+				82C44DD81AC4017800133684 /* LoginViewController.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82C44DD11AC2F6D400133684 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82C44D991AC2F15D00133684 /* libstdc++.6.dylib */,
+				82C44D971AC2F14E00133684 /* libc++.dylib */,
+				82C44D951AC2F14200133684 /* libz.dylib */,
+				82C44D931AC2F13700133684 /* Security.framework */,
+				82C44D911AC2F12F00133684 /* CoreLocation.framework */,
+				82C44D8F1AC2F11200133684 /* CoreData.framework */,
+				82C44D8D1AC2F10800133684 /* MobileCoreServices.framework */,
+				82C44D891AC2F0FF00133684 /* sqlcipher.framework */,
+				82C44D8A1AC2F0FF00133684 /* libWorklightStaticLibProjectNative.a */,
+				82C44D871AC2F0E800133684 /* SystemConfiguration.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		C764C4DE1B68E77600E27AB4 /* watchapp */ = {
+			isa = PBXGroup;
+			children = (
+				C764C4DF1B68E77600E27AB4 /* Interface.storyboard */,
+				C764C4E21B68E77600E27AB4 /* Assets.xcassets */,
+				C764C4E41B68E77600E27AB4 /* Info.plist */,
+			);
+			path = watchapp;
+			sourceTree = "<group>";
+		};
+		C764C4ED1B68E77700E27AB4 /* watchapp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C764C4F01B68E77700E27AB4 /* InterfaceController.swift */,
+				C764C4F21B68E77700E27AB4 /* ExtensionDelegate.swift */,
+				C764C4F41B68E77700E27AB4 /* NotificationController.swift */,
+				C764C4F61B68E77700E27AB4 /* Assets.xcassets */,
+				C764C4F81B68E77700E27AB4 /* Info.plist */,
+				C764C4EE1B68E77700E27AB4 /* Supporting Files */,
+			);
+			path = "watchapp Extension";
+			sourceTree = "<group>";
+		};
+		C764C4EE1B68E77700E27AB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C764C4EF1B68E77700E27AB4 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82C44D5D1AC2EF9900133684 /* DigitalBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C44D7D1AC2EF9900133684 /* Build configuration list for PBXNativeTarget "DigitalBank" */;
+			buildPhases = (
+				82C44D5A1AC2EF9900133684 /* Sources */,
+				82C44D5B1AC2EF9900133684 /* Frameworks */,
+				82C44D5C1AC2EF9900133684 /* Resources */,
+				C764C5031B68E77700E27AB4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C764C4FA1B68E77700E27AB4 /* PBXTargetDependency */,
+			);
+			name = DigitalBank;
+			productName = SwiftNativeCustomLoginModule;
+			productReference = 82C44D5E1AC2EF9900133684 /* DigitalBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C764C4DC1B68E77600E27AB4 /* watchapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C764C5001B68E77700E27AB4 /* Build configuration list for PBXNativeTarget "watchapp" */;
+			buildPhases = (
+				C764C4DB1B68E77600E27AB4 /* Resources */,
+				C764C4FF1B68E77700E27AB4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C764C4EC1B68E77700E27AB4 /* PBXTargetDependency */,
+			);
+			name = watchapp;
+			productName = watchapp;
+			productReference = C764C4DD1B68E77600E27AB4 /* watchapp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C764C4E81B68E77700E27AB4 /* watchapp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C764C4FC1B68E77700E27AB4 /* Build configuration list for PBXNativeTarget "watchapp Extension" */;
+			buildPhases = (
+				C764C4E51B68E77700E27AB4 /* Sources */,
+				C764C4E61B68E77700E27AB4 /* Frameworks */,
+				C764C4E71B68E77700E27AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchapp Extension";
+			productName = "watchapp Extension";
+			productReference = C764C4E91B68E77700E27AB4 /* watchapp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82C44D561AC2EF9900133684 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					82C44D5D1AC2EF9900133684 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TN6YQNGLXP;
+					};
+					C764C4DC1B68E77600E27AB4 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = TN6YQNGLXP;
+					};
+					C764C4E81B68E77700E27AB4 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = TN6YQNGLXP;
+					};
+				};
+			};
+			buildConfigurationList = 82C44D591AC2EF9900133684 /* Build configuration list for PBXProject "DigitalBank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82C44D551AC2EF9900133684;
+			productRefGroup = 82C44D5F1AC2EF9900133684 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82C44D5D1AC2EF9900133684 /* DigitalBank */,
+				C764C4DC1B68E77600E27AB4 /* watchapp */,
+				C764C4E81B68E77700E27AB4 /* watchapp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82C44D5C1AC2EF9900133684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8230D2A21AC9643A008614F2 /* worklight.plist in Resources */,
+				480100E11B7CB6CA00A8535C /* login icon.png in Resources */,
+				8230D2A31AC9643A008614F2 /* WorklightAPI in Resources */,
+				480100E51B7CBEA400A8535C /* db.png in Resources */,
+				82C44D691AC2EF9900133684 /* Main.storyboard in Resources */,
+				82C44D6E1AC2EF9900133684 /* LaunchScreen.xib in Resources */,
+				82C44D6B1AC2EF9900133684 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C764C4DB1B68E77600E27AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C764C4E31B68E77600E27AB4 /* Assets.xcassets in Resources */,
+				480100E21B7CB6CA00A8535C /* login icon.png in Resources */,
+				C764C4E11B68E77600E27AB4 /* Interface.storyboard in Resources */,
+				480100E61B7CBEA400A8535C /* db.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C764C4E71B68E77700E27AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480100E71B7CBEA400A8535C /* db.png in Resources */,
+				C764C4F71B68E77700E27AB4 /* Assets.xcassets in Resources */,
+				480100E31B7CB6CA00A8535C /* login icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82C44D5A1AC2EF9900133684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C44DD91AC4017800133684 /* LoginViewController.swift in Sources */,
+				82C44DD61AC4015300133684 /* MyConnectListener.swift in Sources */,
+				82C44DD51AC4015300133684 /* MyChallengeHandler.swift in Sources */,
+				82C44D661AC2EF9900133684 /* ViewController.swift in Sources */,
+				82C44DD71AC4015300133684 /* MyLogoutListener.swift in Sources */,
+				82C44D641AC2EF9900133684 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C764C4E51B68E77700E27AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C764C4F51B68E77700E27AB4 /* NotificationController.swift in Sources */,
+				C764C4F31B68E77700E27AB4 /* ExtensionDelegate.swift in Sources */,
+				C764C4F11B68E77700E27AB4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C764C4EC1B68E77700E27AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C764C4E81B68E77700E27AB4 /* watchapp Extension */;
+			targetProxy = C764C4EB1B68E77700E27AB4 /* PBXContainerItemProxy */;
+		};
+		C764C4FA1B68E77700E27AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C764C4DC1B68E77600E27AB4 /* watchapp */;
+			targetProxy = C764C4F91B68E77700E27AB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82C44D671AC2EF9900133684 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C44D681AC2EF9900133684 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82C44D6C1AC2EF9900133684 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C44D6D1AC2EF9900133684 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		C764C4DF1B68E77600E27AB4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C764C4E01B68E77600E27AB4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82C44D7B1AC2EF9900133684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f5414075-c733-4341-a627-be4f31d3ac65";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82C44D7C1AC2EF9900133684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "f5414075-c733-4341-a627-be4f31d3ac65";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82C44D7E1AC2EF9900133684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846C4FDE87B7CDB29A2AB7CF /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/WorklightAPI/include";
+				INFOPLIST_FILE = SwiftNativeCustomLoginModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlindia.digitalbank;
+				PRODUCT_NAME = DigitalBank;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WorklightAPI/include/WLSwiftBridgingHeader.h";
+			};
+			name = Debug;
+		};
+		82C44D7F1AC2EF9900133684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391B07D00FBB5119E2D0FF96 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/WorklightAPI/include";
+				INFOPLIST_FILE = SwiftNativeCustomLoginModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlindia.digitalbank;
+				PRODUCT_NAME = DigitalBank;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WorklightAPI/include/WLSwiftBridgingHeader.h";
+			};
+			name = Release;
+		};
+		C764C4FD1B68E77700E27AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "watchapp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlindia.trusteddevicesample.watchkitapp;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C764C4FE1B68E77700E27AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "watchapp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlindia.trusteddevicesample.watchkitapp;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C764C5011B68E77700E27AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = watchapp_Extension;
+				INFOPLIST_FILE = watchapp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlindia.trusteddevicesample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C764C5021B68E77700E27AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thejaswini Ramachandra (6D6FRG5988)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = watchapp_Extension;
+				INFOPLIST_FILE = watchapp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlindia.trusteddevicesample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82C44D591AC2EF9900133684 /* Build configuration list for PBXProject "DigitalBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C44D7B1AC2EF9900133684 /* Debug */,
+				82C44D7C1AC2EF9900133684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C44D7D1AC2EF9900133684 /* Build configuration list for PBXNativeTarget "DigitalBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C44D7E1AC2EF9900133684 /* Debug */,
+				82C44D7F1AC2EF9900133684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C764C4FC1B68E77700E27AB4 /* Build configuration list for PBXNativeTarget "watchapp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C764C4FD1B68E77700E27AB4 /* Debug */,
+				C764C4FE1B68E77700E27AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C764C5001B68E77700E27AB4 /* Build configuration list for PBXNativeTarget "watchapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C764C5011B68E77700E27AB4 /* Debug */,
+				C764C5021B68E77700E27AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82C44D561AC2EF9900133684 /* Project object */;
+}

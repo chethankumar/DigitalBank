@@ -122,7 +122,7 @@ import javax.crypto.spec.SecretKeySpec;
 				Cipher cipher = Cipher.getInstance("AES");
 				cipher.init(Cipher.DECRYPT_MODE, aesKey);
 				decrypted = new String(cipher.doFinal(encodedBytes));
-				System.err.println("sadfsdfsad->>>>>" + decrypted.toString());
+				System.err.println("error->>>>>" + decrypted.toString());
 				return(decrypted);
 			}
 			catch(Exception e)
@@ -141,7 +141,7 @@ import javax.crypto.spec.SecretKeySpec;
 	}
 
 	public void checkIfWearableConnected() {
-        System.err.println("sadfsdfsad->>>>>" + decryptdata("Name1"));
+        System.err.println("error->>>>>" + decryptdata("Name1"));
 		retrieveDeviceNode(new Callback() {
 			@Override
 			public void success(String nodeId) {
@@ -171,8 +171,8 @@ import javax.crypto.spec.SecretKeySpec;
 			@Override
 			public void failed(String message) {
                 Log.d("Wearable-->", message);
-                System.err.println("sadfsdfsad->>>>>" +decryptdata("Name1"));
-                System.err.println("sadfsdfsad->>>>>" +decryptdata("Pass1"));
+                System.err.println("error->>>>>" +decryptdata("Name1"));
+                System.err.println("error->>>>>" +decryptdata("Pass1"));
 			}
 		});
 
@@ -194,10 +194,10 @@ import javax.crypto.spec.SecretKeySpec;
 				if (nodes.size() > 0) {
 					String nodeId = nodes.get(0).getId();
 					callback.success(nodeId);
-                    System.err.println("sadfsdfsad->>>>>" + decryptdata("Pass1"));
+                    System.err.println("error->>>>>" + decryptdata("Pass1"));
 				} else {
 					callback.failed("No paired wearables found");
-                    System.err.println("sadfsdfsad->>>>>" + decryptdata("Pass1"));
+                    System.err.println("error->>>>>" + decryptdata("Pass1"));
 				}
 				client.disconnect();
 			}
