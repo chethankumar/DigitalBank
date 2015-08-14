@@ -74,7 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
 
             <Button
                 android:id="@+id/login"
@@ -128,7 +129,17 @@
                 android:textColor="#ffffffff" />
         </LinearLayout>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Trusted Wearable"
+            android:background="@drawable/white_button"
+            android:id="@+id/wear"
+            android:layout_marginBottom="4dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
+
 
     </RelativeLayout>
 
-</RelativeLayout><!-- From: file:/Users/chethan/Documents/SametimeFileTransfers/DigitalBankAndroid/app/src/main/res/layout/activity_login.xml -->
+</RelativeLayout><!-- From: file:/Users/apple/Documents/MobileFirst%20Works/DigitalBank/DigitalBankAndroid/app/src/main/res/layout/activity_login.xml -->

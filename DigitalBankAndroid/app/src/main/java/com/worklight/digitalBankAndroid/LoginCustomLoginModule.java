@@ -20,6 +20,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Base64;
 import android.util.Log;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -40,15 +42,15 @@ import javax.crypto.spec.SecretKeySpec;
 
     public class LoginCustomLoginModule extends Activity {
 	private EditText userNameEditText, passwordEditText;
-	private Button loginBtn, backBtn;
-	private TextView login_textView2, login_textView3;
+	private Button loginBtn, backBtn,Regwearable;
+	private TextView login_textView2, login_textView3,usertext,passtext;
 	private Intent result;
 	private static final long CONNECTION_TIME_OUT_MS = 100;
 	private static LoginCustomLoginModule MiscThis;
     public static final String Back = "back";
 	public static final String UserNameExtra = "username";
 	public static final String PasswordExtra = "password";
-	public static final String key = "Bar12345Bar12345"; // 128 bit key
+	public static final String key = "Bar12345Bar12345";
 	public static final Key aesKey = new SecretKeySpec(key.getBytes(), "AES");
 
 	@Override
@@ -58,14 +60,39 @@ import javax.crypto.spec.SecretKeySpec;
 		MiscThis = this;
 		userNameEditText = (EditText) findViewById(R.id.enterName);
 		passwordEditText = (EditText) findViewById(R.id.enterPass);
+		usertext=(TextView) findViewById(R.id.username);
+		passtext=(TextView) findViewById(R.id.pass);
 		loginBtn = (Button) findViewById(R.id.login);
 		backBtn = (Button) findViewById(R.id.back);
+		Regwearable = (Button) findViewById(R.id.wear);
 		login_textView2 = (TextView)findViewById(R.id.login_textView2);
 		login_textView3 = (TextView)findViewById(R.id.login_textView3);
 		login_textView2.setTypeface(Utils.getBoldTypeface(this));
 		login_textView3.setTypeface(Utils.getLightTypeface(this));
 		result = new Intent();
-		checkIfWearableConnected();
+		if(decryptdata("trusted")=="error"){
+			Regwearable.setVisibility(View.VISIBLE);
+			loginBtn.setVisibility(View.INVISIBLE);
+			backBtn.setVisibility(View.INVISIBLE);
+			userNameEditText.setVisibility(View.INVISIBLE);
+			passwordEditText.setVisibility(View.INVISIBLE);
+			usertext.setVisibility(View.INVISIBLE);
+			passtext.setVisibility(View.INVISIBLE);
+		}
+		else
+		{
+		Regwearable.setVisibility(View.INVISIBLE);
+		encryptdata("activity", "window");
+			checkIfWearableConnected();
+
+		}
+
+		Regwearable.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				checkIfWearableConnected();
+			}
+		});
 
 		//ClickListener
 		loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -73,8 +100,8 @@ import javax.crypto.spec.SecretKeySpec;
 			public void onClick(View v) {
 				String userName = userNameEditText.getText().toString();
 				String password = passwordEditText.getText().toString();
-				encryptdata(userName,"Name");
-				encryptdata(password, "Pass");
+				encryptdata(userName,"TempName");
+				encryptdata(password, "TempPass");
 				result.putExtra(UserNameExtra, userName);
 				result.putExtra(PasswordExtra, password);
 				result.putExtra(Back, false);
@@ -87,9 +114,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 			@Override
 			public void onClick(View v) {
-				result.putExtra(Back, true);
-				setResult(RESULT_OK, result);
-				finish();
+				onCreate(null);
 			}
 		});
 	}
@@ -97,7 +122,7 @@ import javax.crypto.spec.SecretKeySpec;
 		public void encryptdata(String message,String tag)
 		{
 			try
-			{   String decrypted;
+			{
 				Cipher cipher = Cipher.getInstance("AES");
 				cipher.init(Cipher.ENCRYPT_MODE, aesKey);
 				byte[] encrypted = cipher.doFinal(message.getBytes());
@@ -118,11 +143,11 @@ import javax.crypto.spec.SecretKeySpec;
 			final String decrypted;
 			try {
 				SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(MiscThis);
-                byte[] encodedBytes =  Base64.decode(preferences.getString(tag, ""),Base64.DEFAULT);
+                byte[] encodedBytes =  Base64.decode(preferences.getString(tag, ""), Base64.DEFAULT);
 				Cipher cipher = Cipher.getInstance("AES");
 				cipher.init(Cipher.DECRYPT_MODE, aesKey);
 				decrypted = new String(cipher.doFinal(encodedBytes));
-				System.err.println("error->>>>>" + decrypted.toString());
+				System.err.println("<------Decryption Success---->");
 				return(decrypted);
 			}
 			catch(Exception e)
@@ -141,38 +166,82 @@ import javax.crypto.spec.SecretKeySpec;
 	}
 
 	public void checkIfWearableConnected() {
-        System.err.println("error->>>>>" + decryptdata("Name1"));
 		retrieveDeviceNode(new Callback() {
 			@Override
 			public void success(String nodeId) {
-				final String userName = decryptdata("Name1");
-				final String password = decryptdata("Pass1");
-				if (userName != null && userName != "" && password != null && nodeId != null) {
+				if (decryptdata("window").equals("activity")) {
+					encryptdata("false", "window");
+					final String userName = decryptdata("Name");
+					final String password = decryptdata("Pass");
+					final String wearableID = decryptdata("trusted");
+					if (userName != "error" && userName != "error" && password != null && nodeId.equals(wearableID)) {
+						Runnable run = new Runnable() {
+							public void run() {
+								userNameEditText.setText(userName);
+								passwordEditText.setText(password);
+							}
+						};
+						MiscThis.runOnUiThread(run);
+						try {
+							Thread.sleep(750);
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
+						result.putExtra(UserNameExtra, userName);
+						result.putExtra(PasswordExtra, password);
+						result.putExtra(Back, false);
+						setResult(RESULT_OK, result);
+						finish();
+					}
+				} else {
+					encryptdata(nodeId, "trusted");
 					Runnable run = new Runnable() {
 						public void run() {
-							userNameEditText.setText(userName);
-							passwordEditText.setText(password);
+							new AlertDialog.Builder(MiscThis)
+									.setTitle("Digital Bank")
+									.setMessage("Trusted Wearable Registered")
+									.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+										public void onClick(DialogInterface dialog, int which) {
+											onCreate(null);
+
+										}
+									})
+									.setIcon(android.R.drawable.ic_dialog_alert)
+									.show();
+
+
 						}
 					};
 					MiscThis.runOnUiThread(run);
-					try {
-						Thread.sleep(750);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
-					result.putExtra(UserNameExtra, userName);
-					result.putExtra(PasswordExtra, password);
-					result.putExtra(Back, false);
-					setResult(RESULT_OK, result);
-					finish();
 				}
+
 			}
+
 
 			@Override
 			public void failed(String message) {
-                Log.d("Wearable-->", message);
-                System.err.println("error->>>>>" +decryptdata("Name1"));
-                System.err.println("error->>>>>" +decryptdata("Pass1"));
+				if (decryptdata("window").equals("activity")){
+					encryptdata("false", "window");
+				}
+				else
+				{
+					Runnable run = new Runnable() {
+						public void run() {
+							new AlertDialog.Builder(MiscThis)
+									.setTitle("Digital Bank")
+									.setMessage("No Trusted Wearable Found")
+									.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+										public void onClick(DialogInterface dialog, int which) {
+											dialog.cancel();
+										}
+									})
+									.setIcon(android.R.drawable.ic_dialog_alert)
+									.show();
+						}
+					};
+					MiscThis.runOnUiThread(run);
+				}
+
 			}
 		});
 
@@ -194,10 +263,9 @@ import javax.crypto.spec.SecretKeySpec;
 				if (nodes.size() > 0) {
 					String nodeId = nodes.get(0).getId();
 					callback.success(nodeId);
-                    System.err.println("error->>>>>" + decryptdata("Pass1"));
+					System.err.println("wearable found");
 				} else {
 					callback.failed("No paired wearables found");
-                    System.err.println("error->>>>>" + decryptdata("Pass1"));
 				}
 				client.disconnect();
 			}
