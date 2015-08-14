@@ -211,7 +211,7 @@
 				82C44D611AC2EF9900133684 /* Supporting Files */,
 			);
 			name = DigitalBank;
-			path = SwiftNativeCustomLoginModule;
+			path = DigitalBank;
 			sourceTree = "<group>";
 		};
 		82C44D611AC2EF9900133684 /* Supporting Files */ = {
@@ -292,7 +292,7 @@
 				C764C4FA1B68E77700E27AB4 /* PBXTargetDependency */,
 			);
 			name = DigitalBank;
-			productName = SwiftNativeCustomLoginModule;
+			productName = DigitalBank;
 			productReference = 82C44D5E1AC2EF9900133684 /* DigitalBank.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -575,7 +575,7 @@
 					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/WorklightAPI/include";
-				INFOPLIST_FILE = SwiftNativeCustomLoginModule/Info.plist;
+				INFOPLIST_FILE = DigitalBank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -601,7 +601,7 @@
 					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/WorklightAPI/include";
-				INFOPLIST_FILE = SwiftNativeCustomLoginModule/Info.plist;
+				INFOPLIST_FILE = DigitalBank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
